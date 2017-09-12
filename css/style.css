@@ -224,6 +224,10 @@ width: device-width;
         color: inherit;
     }
     
+    a:focus {
+        color: inherit;
+    }
+    
     ul {
         list-style: none;
     }
@@ -313,13 +317,17 @@ width: device-width;
         border-radius: 4px;
         padding: 0px 20px;
         width: 95%;
-        max-width: 620px;
+        max-width: 700px;
         margin: 100px auto 20px;
+        background-image: url("../images/abstruct.png"), .4;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
     }
     /* ==================== CONTENT  ==================== */
     
     .main {
-        padding: 100px 0px;
+        padding: 70px 0px;
         padding-bottom: 0px;
     }
     
@@ -370,16 +378,14 @@ width: device-width;
     .header-section {
         padding-bottom: 0px;
     }
-    /* ====================   ==================== */
+    /* ====================  content-slide ==================== */
     
-    .content-slide h6 {
-        margin: 40px auto;
-        font-size: 14px;
-        color: #f4f4f4;
-        font-weight: 400;
-        line-height: 20px;
-        letter-spacing: 1.0px;
-        text-shadow: 0px 1px #1e1e1e;
+    .content-slide .head {
+        margin: 40px auto 0px;
+        text-transform: uppercase;
+        color: #fefefe;
+        letter-spacing: 1.5px;
+        font-weight: 500;
     }
     /* ==================== APP STORES ================*/
     
@@ -403,18 +409,25 @@ width: device-width;
         font-size: 15px;
     }
     
+    .store img {
+        width: 100%;
+        height: auto;
+    }
+    
     .store {
         border: 1.5px solid #EFD45A;
-        padding: 7px 30px;
+        padding: 7px 7px 0px;
         text-align: center;
         width: 120px;
         margin: 5px 5px;
         border-radius: 5px;
+        background: #f4f4f4;
     }
     
     .store:hover,
     .store:focus {
-        background: rgba(24, 24, 49, 0.49);
+        background: #f4f4f4;
+        border: 1.5px solid #FFFFFF;
     }
     
     .store>a {
@@ -519,10 +532,11 @@ width: device-width;
     }
     
     .subs-head {
-        font-size: 13px;
+        font-size: 12px;
         text-transform: uppercase;
-        margin-top: 15px;
-        margin-bottom: -10px;
+        margin-top: 40px;
+        margin-bottom: 5px;
+        letter-spacing: 1px;
     }
     
     .message-success {
@@ -608,7 +622,7 @@ width: device-width;
     }
     
     .subscription-form :-moz-input-placeholder {
-        opacity: .65;
+        opacity: .8;
         text-transform: capitalize;
     }
     
@@ -620,7 +634,7 @@ width: device-width;
         background-color: #191933;
         opacity: 1;
         color: #f4f4f4;
-        border: 2px solid #191933;
+        border: 2px solid #EFD45A;
     }
     
     .subscription-form button:hover,
@@ -628,7 +642,7 @@ width: device-width;
         background-color: #191933;
         opacity: 1;
         color: #fff;
-        border: 2px solid #191933;
+        border: 2px solid #EFD45A;
     }
     
     #signup {
@@ -640,7 +654,7 @@ width: device-width;
     }
     
     button[type="submit"]:disabled {
-        cursor: not-allowed;
+        opacity: .2;
     }
     
     .top-margin {
@@ -1230,9 +1244,16 @@ width: device-width;
         height: auto;
     }
     
+    .share h6 {
+        margin: 0px auto;
+        font-size: 80%;
+        letter-spacing: 1px;
+    }
+    
     .content-share hr {
         width: 200px;
         border-top-color: #797A7A;
+        margin-top: 10px;
     }
     
     .share-link {
