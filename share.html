@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en-US">
+<!--<![endif]-->
+
+<head>
+
+    <!-- META DATA -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    <!-- Title -->
+    <title>oJam | Home </title>
+    <meta name="keywords" content="ojam, Ojam, oJam, music, music instruments, ojamapp, music apps, Delhi  music, Indian Music, music bands, bands, band ">
+    <meta name="description" content="oJam - coming soon on Android and iOS">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" type="text/css" href="css/ionicons.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+
+    <script type="text/javascript" src="js/angular.min.js"></script>
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,900' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://webnextbd.net/demo/js/respond.min.js"></script>
+<![endif]-->
+
+    <!--[if lt IE 11]>
+<link rel="stylesheet" type="text/css" href="http://webnextbd.net/demo/css/ie.css">
+<![endif]-->
+    <script src="js/controller/subscribecrtl.js"></script>
+
+</head>
+
+<body>
+    <section id="sharepage">
+        <div class="container">
+            <div class="content-share">
+                <h3>Thankyou for subscribing <a class="back-link" href="http://ojamapp.com/">oJam</a>.</h3>
+                <p>As of 2017, text messages are used by youth and adults for personal, family and social purposes and in business, between colleagues.</p>
+                <h6>Share oJam with your musician friends</h6>
+                <div class="shareBtn">
+                    <div class="fb-share-button" data-href="https://ojamapp.com/" data-layout="button" data-size="large" data-mobile-iframe="true">
+                        <a class="fb-share fb-xfbml-parse-ignore" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fojamapp.com%2F&amp;src=sdkpreparse">
+                            <img src="images/fb.svg" alt="facebook">
+                        </a>
+                    </div>
+                    <div>
+                        <a class="tw-share twitter-share-button" href="https://twitter.com/intent/tweet?text=This%20is%20an%20awesome%20app,%20please%20share%20and%20subscribe%20to%20http://ojamapp.com/">
+                            <img src="images/tw.svg" alt="Twitter">
+                        </a>
+                    </div>
+                </div>
+                <hr>
+                <p class="share-link">
+                    <script>
+                        var copyTextareaBtn = function(event) {
+                            var copyTextarea = document.querySelector('.js-copytextarea');
+                            copyTextarea.select();
+                            try {
+                                var successful = document.execCommand('copy');
+                                var msg = successful ? 'successful' : 'unsuccessful';
+                                console.log('Copying text command was ' + msg);
+                                document.getElementById(message).style.opacity = 1;
+
+                            } catch (err) {
+                                console.log('Oops, unable to copy');
+                            }
+                        };
+                    </script>
+                    <textarea class="js-copytextarea">http://ojamapp.com/</textarea>
+                    <button class="js-textareacopybtn" style="vertical-align:top;" onclick="copyTextareaBtn()">Copy</button>
+                </p>
+                <p id="message">Copied to clipboard !!</p>
+
+            </div>
+            <a class="backtoHome" href="http://ojamapp.com/">Back To Home</a>
+
+        </div>
+
+    </section>
+
+    <!-- JS -->
+    <script type="text/javascript " src="js/jquery-1.11.3.min.js "></script>
+    <script type="text/javascript " src="js/bootstrap.min.js "></script>
+    <script type="text/javascript " src="js/jquery.backstretch.min.js "></script>
+    <script type="text/javascript " src="js/jquery.countdown.min.js "></script>
+    <script type="text/javascript " src="js/jquery.particleground.min.js "></script>
+    <script type="text/javascript " src="js/jquery.nicescroll.min.js "></script>
+    <script type="text/javascript " src="js/jquery.flexslider-min.js "></script>
+    <script type="text/javascript " src="js/jquery.appear.js "></script>
+    <script type="text/javascript " src="js/main.js "></script>
+
+</body>
+<div id="fb-root"></div>
+<script>
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.10";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+</html>

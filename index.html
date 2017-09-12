@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en-US">
+<!--<![endif]-->
+
+<head>
+
+    <!-- META DATA -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    <!-- Title -->
+    <title>oJam | Home </title>
+    <meta name="keywords" content="ojam, Ojam, oJam, music, music instruments, ojamapp, music apps, Delhi  music, Indian Music, music bands, bands, band ">
+    <meta name="description" content="oJam - coming soon on Android and iOS">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" type="text/css" href="css/ionicons.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+
+    <script type="text/javascript" src="js/angular.min.js"></script>
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,900' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://webnextbd.net/demo/js/respond.min.js"></script>
+<![endif]-->
+
+    <!--[if lt IE 11]>
+<link rel="stylesheet" type="text/css" href="http://webnextbd.net/demo/css/ie.css">
+<![endif]-->
+    <script src="js/controller/subscribecrtl.js"></script>
+
+</head>
+
+<body class="image-background">
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="loading-animation">&nbsp;</div>
+    </div>
+    <!-- /Preloader -->
+    <div class="loader" id="loading" style="display:block">
+        <div class="progress" id="progressLoad"></div>
+    </div>
+    <script type="text/javascript">
+        $(window).load(function() {
+            $(".loader").fadeOut("slow");
+            document.getElementById("loading").style.display = 'none';
+        });
+    </script>
+
+    <!-- Overlay -->
+    <div id="section-home" class="home-section-wrap center">
+        <div class="section-overlay"></div>
+    </div>
+    <!-- /Overlay -->
+
+    <!-- container -->
+    <div class="containers">
+
+        <!-- main -->
+        <div class="main" ng-app="subsApp" ng-controller="subsController">
+
+
+            <!-- message modal   -->
+            <div class="modal fadeIn" id="messageModal">
+                <div class="cp">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button class="close" type="button" data-dismiss="modal">&times;</button>
+                                <h4>Message</h4>
+                            </div>
+                            <div class="modal-body text-center">
+                                <div class="loaderElement" id="loaderElement"><img src="images/loader.gif" alt="Loading..."></div>
+
+                                <p class="message-success" id="message-success">{{msg}}</p>
+                                <p class="message-error" id="message-error">{{msg}}</p>
+                            </div>
+                            <!--<div class="modal-footer">
+                                <button class="btn btn-default" type="button" id="modalClose" data-dismiss="modal">Close</button>
+                            </div>-->
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- /message modal   -->
+
+            <!-- section -->
+            <section class="section fullscreen main-site">
+                <div class="container-section">
+                    <div class="container-table">
+                        <div class="content-table">
+                            <!-- bt-carousel -->
+                            <div class="bt-carousel">
+
+                                <!-- home section -->
+                                <div class="item-slide show">
+                                    <!-- container -->
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="bg-cover animated bounceInDown" data-animation-delay="100">
+                                                <!-- header -->
+                                                <header class="header-site">
+                                                    <div class="logo-site">
+                                                        <img class="img-responsive" src="images/logo.png" data-at2x="images/logo@2x.png" alt="Logo" />
+                                                        <div class="title-section">
+                                                            <h3 class="text-center name-site">oJam</h3>
+                                                        </div>
+                                                        <!--<div class="line-separate line-white line-center"><span></span></div>-->
+                                                    </div>
+                                                </header>
+                                                <!-- /header -->
+                                                <!-- content slide -->
+                                                <div class="content-slide">
+                                                    <h6 class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry!<br></h6>
+                                                    <div class="app-links">
+                                                        <p style="font-size:13px; text-decoration:underline;margin-top:10px">Get App Now</p>
+                                                        <div class="stores">
+                                                            <div>
+                                                                <a href="#" class="store">
+                                                                    <div class="g-store">
+                                                                        Google
+                                                                        <!--<img src="images/g.jpg" alt="Google Playstore">-->
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div>
+                                                                <a href="#" class="store">
+                                                                    <div class="g-store">
+                                                                        Apple
+                                                                        <!--<img src="images/g.jpg" alt="Google Playstore">-->
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                    <!-- Subscribe Form -->
+                                                    <div class="form">
+                                                        <!-- container form -->
+
+                                                        <div class="container-form">
+                                                            <!-- section page -->
+                                                            <center>
+                                                                <!--<p class="subs-head">subscribe Now</p>-->
+                                                                <div class="section-page" id="signup">
+                                                                    <form class="subscription-form mailchimp" name="myForm" method="post" id="mc-form" ng-submit="subscribe()">
+                                                                        <div class="form-group">
+                                                                            <label id="emailLabel">Your Email</label>
+                                                                            <input type="email" id="email" class="border-radius-22" ng-model="email" name="email" placeholder="Your Email" autocomplete="off" required/>
+                                                                        </div>
+                                                                        <!-- label styling script -->
+                                                                        <script>
+                                                                            document.getElementById("email").onkeyup = function() {
+
+                                                                                var str = document.getElementById("email").value;
+                                                                                var strLength = str.length;
+                                                                                if (strLength == 0) {
+                                                                                    document.getElementById("emailLabel").style.opacity = "0";
+                                                                                    // console.log("empty value");
+                                                                                } else {
+                                                                                    document.getElementById("emailLabel").style.opacity = '1';
+                                                                                    // console.log("not empty");
+                                                                                }
+                                                                            }
+                                                                        </script>
+
+                                                                        <button type="submit" id="subscribebtn" ng-disabled="myForm.email.$invalid" class="border-button no-bottom-margin" data-toggle="modal" data-target="#messageModal">Step Inside</button>
+                                                                    </form>
+
+
+
+
+                                                                </div>
+                                                                <!-- /section page -->
+                                                            </center>
+
+                                                        </div>
+                                                        <!-- /container form -->
+                                                    </div>
+                                                    <!-- /Subscribe Form -->
+
+
+                                                </div>
+                                                <!-- /content slide -->
+                                            </div>
+                                        </div>
+                                        <!-- /row -->
+
+                                        <div class="bottom ">
+                                            <!-- socials icons 
+                                            <nav class="socials-icons animated bounceInUp ">
+                                                <ul>
+                                                    <li><a href="https://www.facebook.com/ojamapp/ " target="_blank "><i class="ion-social-facebook "></i></a></li>
+                                                    <li><a href="https://twitter.com/ojamapp " target="_blank "><i class="ion-social-twitter "></i></a></li>
+                                                    <li><a href="https://www.instagram.com/ojamapp " target="_blank "><i class="ion-social-instagram "></i></a></li>
+                                                </ul>
+                                            </nav>
+                                            <!-- /socials icons -->
+
+                                            <!-- copyright -->
+                                            <footer class="copy-right animated bounceInUp " data-animation-delay="100">
+                                                <div class="copyright text-center ">
+                                                    Copyright © 2017 <a href="http://ojam.com ">oJam</a> - All Rights are Reserved.
+                                                </div>
+                                            </footer>
+                                            <!-- /copyright -->
+                                        </div>
+                                    </div>
+                                    <!-- /container -->
+                                </div>
+                                <!-- /home section -->
+
+                            </div>
+                            <!-- /bt-carousel -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /section -->
+        </div>
+        <!-- /main -->
+    </div>
+
+    <!-- /container ->
+<script type="text/javascript " src="js/controller/subscribecrtl.js "></script>        
+
+<!-- JS -->
+    <script type="text/javascript " src="js/jquery-1.11.3.min.js "></script>
+    <script type="text/javascript " src="js/bootstrap.min.js "></script>
+    <script type="text/javascript " src="js/jquery.backstretch.min.js "></script>
+    <script type="text/javascript " src="js/jquery.countdown.min.js "></script>
+    <script type="text/javascript " src="js/jquery.particleground.min.js "></script>
+    <script type="text/javascript " src="js/jquery.nicescroll.min.js "></script>
+    <script type="text/javascript " src="js/jquery.flexslider-min.js "></script>
+    <script type="text/javascript " src="js/jquery.appear.js "></script>
+    <script type="text/javascript " src="js/main.js "></script>
+
+</body>
+
+</html>
